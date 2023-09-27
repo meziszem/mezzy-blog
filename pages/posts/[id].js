@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import utilStyles from '../../styles/utils.module.css';
+import Tic from "./Tic";
 
 
 export default function Post({ postData }) {
@@ -17,6 +18,7 @@ export default function Post({ postData }) {
           </div>
           <br></br>
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        
         </article>
       </Layout>
     );

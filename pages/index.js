@@ -20,12 +20,8 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <p >[This is my bloggy]</p>
-       
-        <Link href="/posts/first-post">First Post</Link>
-
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h3 className={utilStyles.headingLg}>Blog</h3>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -36,9 +32,12 @@ export default function Home({allPostsData}) {
             </small>
             </li>
           ))}
+          <Link href='posts/Game'>Tic Tac To Game</Link>
+      
         </ul>
       </section>
-       
+    
+    
     </Layout>
   );
 }
