@@ -20,7 +20,11 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      
+      
+    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+    <div class="row">
+      <div class='column'>
         <h3 className={utilStyles.headingLg}>Blog</h3>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -32,12 +36,15 @@ export default function Home({allPostsData}) {
             </small>
             </li>
           ))}
-          <Link href='posts/Game'>Tic Tac To Game</Link>
-      
+          
         </ul>
-      </section>
-    
-    
+        </div>
+     <div class='column2'>
+          <Link href='posts/Game'>Tic Tac Toe Game</Link>
+          </div>
+          </div>
+          </section>
+
     </Layout>
   );
 }

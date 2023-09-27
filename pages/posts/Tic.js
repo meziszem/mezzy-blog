@@ -1,6 +1,6 @@
 import Square from "./Square";
 import { useState } from "react";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
@@ -70,9 +70,12 @@ function Board({ xIsNext, squares, onPlay }) {
           else  {description = "Go to game start";
           }
         return (
+          <div className="button-spacing">
           <li key={move}>
-            <button type="button" className="btn" onClick={() => jumpTo(move)}>{description}</button>
+            <button type="button" className="btn btn-outline-dark" 
+            onClick={() => jumpTo(move)}>{description}</button>
           </li>
+          </div>
         );
       });
         
