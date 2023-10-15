@@ -145,6 +145,7 @@ body {
     width: 70%;
     padding: 1px;
     height: 200px;
+    
   }
   .column2 {
     float: left;
@@ -152,6 +153,8 @@ body {
     padding-left: 20px;
     height: auto;
     border-left: #484848 1px dashed;
+    background: #ececec;
+
   }
 
   /* Clear floats after the columns */
@@ -160,3 +163,25 @@ body {
     display: table;
     clear: both;
 }
+
+.footer {
+  text-align: center;
+  padding-top: 50px;
+  margin: 5px;
+}
+
+
+#section_footer {
+  width: 100%;
+  background: #ececec;
+
+  }
+
+  .btn {
+    padding: 5px;
+  }
+
+  .text-center {
+    border-radius: 5px;
+
+  }
