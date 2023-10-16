@@ -15,7 +15,7 @@ class Footer extends Component {
               Video Blog
             </Link>
             <span>|</span>
-            <Link href="mailto:meseretfh@gmail.com>" className='btn btn-link'>
+            <Link href="<mailto:meseretfh@gmail.com>" className='btn btn-link'>
               Contact
             </Link>
             <p>Copyright © {current_year}, mez. All Rights Reserved.</p>
